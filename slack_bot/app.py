@@ -64,7 +64,7 @@ class SlackBotApp(Stack):
 
         # Writer lambda
         writer_handler = lambda_.Function(self, "SlackBotWriter",
-            runtime=lambda_.Runtime.PYTHON_3_9,
+            runtime=lambda_.Runtime.PYTHON_3_10,
             code=lambda_.Code.from_asset("dist_writer/lambda.zip"),
             handler="message_writer.handler",
             layers=[layer],

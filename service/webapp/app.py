@@ -64,7 +64,7 @@ def write_top_bar():
     with col1:
         st.image(AI_ICON, use_column_width='always')
     with col2:
-        st.subheader("Chat with AI")
+        st.subheader("Chat with Zestiko AI")
     with col3:
         clear = st.button("Clear Chat")
     return clear
@@ -123,4 +123,4 @@ with st.container():
     write_chat_message(a, q)
 
 st.markdown('---')
-input = st.text_input("You are talking to an AI, ask any question.", key="input", on_change=handle_input)
+input = st.text_input("You are talking to Zestiko AI, ask any question about your AWS cloud.", key="input", on_change=handle_input)

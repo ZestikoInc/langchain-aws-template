@@ -1,10 +1,10 @@
 {
     "display_information": {
-        "name": "slack-bot-app"
+        "name": "Zestiko"
     },
     "features": {
         "bot_user": {
-            "display_name": "slack-bot-app",
+            "display_name": "Zestiko",
             "always_online": false
         }
     },
@@ -20,7 +20,7 @@
     },
     "settings": {
         "event_subscriptions": {
-            "request_url": "<api-url>",
+            "request_url": "https://ju760fob20.execute-api.us-east-1.amazonaws.com/prod/",
             "bot_events": [
                 "message.channels",
                 "message.im",

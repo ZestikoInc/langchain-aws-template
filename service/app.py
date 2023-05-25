@@ -17,7 +17,7 @@ class LangChainApp(Stack):
         )
 
         handler = lambda_.Function(self, "LangChainHandler",
-            runtime=lambda_.Runtime.PYTHON_3_9,
+            runtime=lambda_.Runtime.PYTHON_3_10,
             code=lambda_.Code.from_asset("dist/lambda.zip"),
             handler="main.handler",
             layers=[
