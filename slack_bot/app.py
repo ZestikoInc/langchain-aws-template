@@ -36,7 +36,7 @@ class SlackBotApp(Stack):
 
         # Reader lambda
         handler = lambda_.Function(self, "SlackBotReader",
-            runtime=lambda_.Runtime.PYTHON_3_9,
+            runtime=lambda_.Runtime.PYTHON_3_10,
             code=lambda_.Code.from_asset("dist_reader/lambda.zip"),
             handler="message_reader.handler",
             layers=[layer],
